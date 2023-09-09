@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    
+    <link rel="stylesheet" href="styles.css">
+  
+  </head>
+  
+  <body>
+   <p class="para">Login Page for Bitsians and Non-Bitsians</p>
+    <div class="admin_stuff">
+      <button onclick="addInput('admin')" class="admin_button">
+      <div>
+        <img class="admin_logo" src="bits-logo-img.png">
+      </div>
+      <div class="admin">
+        Admin
+      </div>
+    </button>
+    <p></p>
+        <div class="admin_input"></div>
+    </div>
+    
+    <div class="non_admin_stuff">
+      <button onclick="addInput('non_admin')" class="non_admin_button">
+      <div>
+        <img class="non_admin_logo" src="non admin img.jpg">
+      </div>
+      <div class="non_admin">
+        Non Admin
+      </div>
+    </button>
+    <p></p>
+        <div class="non_admin_input"></div>
+    </div>
+
+    <script>
+       function addInput(buttonType) {
+        let emailInput = document.createElement('input');
+        emailInput.type = 'email';
+        emailInput.placeholder = 'Email';
+
+        let passwordInput = document.createElement('input');
+        passwordInput.type = 'password';
+        passwordInput.placeholder = 'Password';
+
+        let inputContainer;
+
+        if (buttonType === 'admin') {
+          inputContainer = document.querySelector('.admin_input');
+        } else if (buttonType === 'non_admin') {
+          inputContainer = document.querySelector('.non_admin_input');
+        }
+
+        if (inputContainer) {
+          inputContainer.appendChild(emailInput);
+          inputContainer.appendChild(passwordInput);
+        }
+      }
+    </script>
+
+
+    <div class="google">
+      <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=en&ifkv=AXo7B7XJj48BwpdEX1QPZU-JH2m4oFhP6QyKCtNYXT2PQMCWFZV0GQfX1XTU9h_3GnRsKQTXXz4lVA&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1829204616%3A1693931211895085&theme=glif" target="_blank">
+        <button class="Google">
+          <img class="google-logo" src="google-img.jpg">
+          Sign in with Google
+          </button>
+      </a>
+    </div>
+  </body>
+</html>

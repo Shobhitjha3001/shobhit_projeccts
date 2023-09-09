@@ -1,0 +1,53 @@
+.para{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.admin_logo,.non_admin_logo{
+  width: 90px;
+  height: 90px;
+}
+
+.non_admin_logo{
+  border-radius: 45px;
+}
+
+.google{
+  margin-top: 100px;
+  margin-left: 350px;
+}
+
+.admin_stuff, .non_admin_stuff{
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.google-logo{
+  width: 25px;
+  height: 25px;
+  border-radius: 12.5px;
+}
+
+.Google{
+  color: black;
+  font-size: medium;
+  background-color: rgb(212, 212, 21);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.admin_button{
+  background-color: red;
+  border-radius: 30px;
+}
+
+.non_admin_button{
+  background-color: green;
+  border-radius: 30px;
+}
+
+.non_admin, .admin{
+  color: white;
+  font-size: 30px;
+}
